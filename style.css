@@ -1,0 +1,167 @@
+@import "./contato.css";
+* {
+  font-family: "Nunito", sans-serif;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+.insta2,
+.face2 {
+  display: none;
+}
+body {
+  margin: 0px;
+  background: rgb(19, 19, 19);
+}
+.logo {
+  display: grid;
+  justify-content: center;
+  margin-top: 71px;
+  margin-bottom: 30px;
+  align-content: center;
+  
+}
+.logo img {
+  border: solid 5px #a57e31;
+  border-radius: 50%;
+  width: auto;
+  height: 200px;
+}
+.titulo1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 20px;
+  color:#ececec;
+  letter-spacing: 1px;
+}
+.titulo1 h2 {
+  font-size: 0.9rem;
+}
+.botoes {
+  display: grid;
+  grid-template-columns: 500px;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.botoes a {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  justify-self: center;
+  background-color:#242424;
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #a57e31;
+  font-size: 1.3rem;
+  width: 600px;
+  border: 3px solid #a57e31;
+}
+.botoes a:hover {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: #a57e31;
+  width: 610px;
+  transition: 0.3s;
+}
+.icones {
+  
+  display: flex;
+  justify-content: center;
+ 
+}
+.icones a {
+  margin: 0px 9px 0px 9px;
+  flex-direction: row-reverse;
+  
+}
+.icones img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+}
+.insta img {
+  width: auto;
+  height: 38px;
+  margin-top: -3.5px;
+}
+.face img {
+  width: auto;
+  height: 47px;
+  margin-top: -7.5px;
+}
+
+@media (max-width: 500px) {
+
+  .botoes a {
+    width: 300px;
+    padding: 15px 15px 15px 15px;
+    font-size: 1.2rem;
+  }
+  .botoes a:first-child {
+    margin-top: 10px;
+  }
+  .botoes a:hover {
+    width: 310px;
+  }
+  .container {
+    width: 100%;;
+  }
+  .logo {
+    margin-top: -60px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    background-image: url(./img/perfilprof2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .logo img {
+
+    display: none;
+  }
+  body {
+    background-image: none;
+  }
+  .titulo1 {
+    color: #363636;
+    margin-top: -30px;
+  }
+  .titulo1 h2 {
+    color: #505050
+  }
+  .icones {
+    padding-top: 17px;
+    margin-top: -20px;
+  }
+  .icones img {
+   position: absolute;
+  }
+  .insta img {
+    top: 30px;
+    right: 25px;
+    height: 40px;
+  }
+  .face img {
+    top: 80px;
+    right: 23px;
+    height: 42px;
+  }
+  .botoes a{
+    border-color: #000000;
+    color:   #000000;
+    background-color: #ffffff;
+  }
+  .botoes a:hover {
+    color: white;
+    border: 3px solid white;
+    background-color: #535353;
+    transition: 0.3s;
+  }
+}
